@@ -14,7 +14,7 @@ import com.stackroute.activitystream.dao.UserDao;
 import com.stackroute.activitystream.model.User;
 
 
-public class ClientTest {
+public class TestUser {
 
 	private static AnnotationConfigApplicationContext context;
 	private static UserDao userDao;
@@ -32,7 +32,7 @@ public class ClientTest {
 	
 	@Test
 	
-	public void testAddClient()
+	public void addUserTestCase()
 	{
 		user=new User();
 		
@@ -49,7 +49,7 @@ public class ClientTest {
 
 //@Test(expected=DataIntegrityViolationException.class)
 
-public void tesAddClientWithDuplicateUserName()
+public void addUserWithDuplicateEmailTestCase()
 {
 	
 	
@@ -61,7 +61,7 @@ public void tesAddClientWithDuplicateUserName()
 
 //@Test(expected=ConstraintViolationException.class)
 
-public void testPasswordFiledPattern()
+public void passwordPatternTestCase()
 {
 	
 	
@@ -73,7 +73,7 @@ public void testPasswordFiledPattern()
 
 //@Test
 
-public void validUser()
+public void validUserTestCase()
 {
 	
 	
@@ -83,7 +83,7 @@ public void validUser()
 
 //@Test(expected=NullPointerException.class)
 
-public void notValidUser()
+public void notValidUserTestCase()
 {
 	
 	
